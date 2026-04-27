@@ -78,22 +78,6 @@ export function ReservationForm({ onSuccess }: ReservationFormProps) {
     }, 3000);
   };
 
-  // Step indicators
-  const StepIndicator = () => (
-    <div className="flex items-center justify-center gap-2 mb-6">
-      {[1, 2].map((s) => (
-        <div
-          key={s}
-          className={`h-1.5 rounded-full transition-all duration-300 ${
-            s <= step
-              ? "bg-brand-gold w-8"
-              : "bg-white/10 w-4"
-          }`}
-        />
-      ))}
-    </div>
-  );
-
   // SUCCESS STATE
   if (step === 3) {
     return (
@@ -115,7 +99,19 @@ export function ReservationForm({ onSuccess }: ReservationFormProps) {
 
   return (
     <div>
-      <StepIndicator />
+      {/* Step indicators */}
+      <div className="flex items-center justify-center gap-2 mb-6">
+        {[1, 2].map((s) => (
+          <div
+            key={s}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              s <= step
+                ? "bg-brand-gold w-8"
+                : "bg-white/10 w-4"
+            }`}
+          />
+        ))}
+      </div>
 
       {/* STEP 1: Date, Time, Party Size */}
       {step === 1 && (

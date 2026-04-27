@@ -1,4 +1,4 @@
-import { Flame, Wine, Heart, Trophy, Users, Leaf } from "lucide-react";
+import { Flame, Wine, Heart } from "lucide-react";
 
 export function AboutSection() {
   const features = [

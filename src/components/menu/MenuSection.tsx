@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Info, Leaf, WheatOff, Shell, Milk } from "lucide-react";
+import { Info, Leaf, WheatOff, Shell, Milk, LucideIcon } from "lucide-react";
 import { CATEGORIES, MENU_ITEMS } from "@/data/menu";
 
-const ALLERGEN_ICONS: Record<string, { icon: any; color: string; label: string }> = {
+const ALLERGEN_ICONS: Record<string, { icon: LucideIcon; color: string; label: string }> = {
   Vegano: { icon: Leaf, color: "text-green-400", label: "Vegano" },
   "Sin Gluten": { icon: WheatOff, color: "text-amber-400", label: "Sin Gluten" },
   Gluten: { icon: WheatOff, color: "text-orange-400/60", label: "Gluten" },
