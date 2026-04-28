@@ -79,7 +79,9 @@ export function MenuSection() {
                 <div>
                   <div className="flex justify-between items-start mb-3">
                     <h3 className="text-xl font-bold text-white group-hover:text-brand-gold transition-colors font-[family-name:var(--font-playfair)]">{item.name}</h3>
-                    <span className="text-brand-gold font-black text-lg ml-4">{item.price.toFixed(2)}€</span>
+                    <span className="text-brand-gold font-black text-lg ml-4">
+                      {item.price !== null ? `${item.price.toFixed(2)}€` : "S/M"}
+                    </span>
                   </div>
                   <p className="text-white/50 text-sm font-light leading-relaxed mb-6">
                     {item.description}
