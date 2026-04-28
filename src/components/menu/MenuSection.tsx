@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Info, Leaf, WheatOff, Shell, Milk, LucideIcon } from "lucide-react";
+import { Info, Leaf, WheatOff, Shell, Milk, LucideIcon, Fish, Egg, Nut } from "lucide-react";
 import { CATEGORIES, MENU_ITEMS } from "@/data/menu";
 
 const ALLERGEN_ICONS: Record<string, { icon: LucideIcon; color: string; label: string }> = {
@@ -11,6 +11,12 @@ const ALLERGEN_ICONS: Record<string, { icon: LucideIcon; color: string; label: s
   Gluten: { icon: WheatOff, color: "text-orange-400/60", label: "Gluten" },
   Marisco: { icon: Shell, color: "text-rose-400", label: "Marisco" },
   Lácteos: { icon: Milk, color: "text-blue-300", label: "Lácteos" },
+  Pescado: { icon: Fish, color: "text-cyan-400", label: "Pescado" },
+  Huevos: { icon: Egg, color: "text-yellow-200", label: "Huevos" },
+  FrutosSecos: { icon: Nut, color: "text-amber-600", label: "Frutos Secos" },
+  Sulfitos: { icon: Info, color: "text-purple-400", label: "Sulfitos" },
+  Soja: { icon: Info, color: "text-green-600", label: "Soja" },
+  Sésamo: { icon: Info, color: "text-orange-300", label: "Sésamo" },
 };
 
 export function MenuSection() {

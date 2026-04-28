@@ -7,7 +7,7 @@ import { Flame } from "lucide-react";
 export function BarbacoaSection() {
   // Extract dishes that are grilled or roasted
   const brasaItems = MENU_ITEMS.filter(
-    (item) => item.category === "Carnes" || item.name.toLowerCase().includes("brasa")
+    (item) => item.category === "Nuestras Brasas" || item.name.toLowerCase().includes("brasa")
   ).slice(0, 4); // Take top 4 for the showcase
 
   return (
