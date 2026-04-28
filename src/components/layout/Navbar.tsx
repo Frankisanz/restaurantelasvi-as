@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "#menu", label: "Carta" },
@@ -36,7 +37,14 @@ export function Navbar() {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-3 group">
+          <Image 
+            src="/logo-las-vinas.jpg" 
+            alt="Logo Restaurante Las Viñas" 
+            width={36} 
+            height={36} 
+            className="rounded-full shadow-lg group-hover:scale-105 transition-transform duration-300"
+          />
           <span className="text-brand-gold text-xl font-bold font-[family-name:var(--font-playfair)] tracking-tight group-hover:opacity-80 transition-opacity">
             Las Viñas
           </span>

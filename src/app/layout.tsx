@@ -58,6 +58,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: "/logo-las-vinas.jpg",
+    shortcut: "/logo-las-vinas.jpg",
+    apple: "/logo-las-vinas.jpg",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Restaurante Las Viñas | Baeza, Jaén",

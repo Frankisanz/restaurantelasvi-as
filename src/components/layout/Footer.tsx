@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
@@ -9,9 +10,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-10">
           {/* Brand Column */}
           <div className="space-y-4">
-            <h3 className="text-brand-gold text-xl font-bold font-[family-name:var(--font-playfair)]">
-              Las Viñas
-            </h3>
+            <div className="flex items-center gap-3">
+              <Image 
+                src="/logo-las-vinas.jpg" 
+                alt="Logo Restaurante Las Viñas" 
+                width={48} 
+                height={48} 
+                className="rounded-full shadow-lg"
+              />
+              <h3 className="text-brand-gold text-2xl font-bold font-[family-name:var(--font-playfair)]">
+                Las Viñas
+              </h3>
+            </div>
             <p className="text-white/50 text-sm font-light leading-relaxed">
               Cocina mediterránea de tradición, con productos de proximidad y la
               pasión que define a Jaén. Una experiencia que se saborea con cada
