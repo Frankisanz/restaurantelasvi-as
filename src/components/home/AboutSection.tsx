@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Flame, Wine, Heart } from "lucide-react";
 
 export function AboutSection() {
@@ -58,12 +59,25 @@ export function AboutSection() {
         </div>
 
         <div className="grid grid-cols-2 gap-4 h-[500px]">
-          <div className="relative rounded-3xl overflow-hidden mt-12 bg-white/5">
-             <div className="absolute inset-0 bg-gradient-to-b from-brand-gold/10 to-transparent" />
-             {/* Aquí irían imágenes reales */}
+          <div className="relative rounded-3xl overflow-hidden mt-12 bg-brand-dark/50 group">
+             <div className="absolute inset-0 bg-gradient-to-b from-brand-gold/20 to-transparent z-10 pointer-events-none" />
+             <Image 
+                src="/emplatado.jpg.jpg" 
+                alt="Emplatado de alta cocina en Restaurante Las Viñas Baeza" 
+                fill 
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-110" 
+             />
           </div>
-          <div className="relative rounded-3xl overflow-hidden mb-12 bg-white/5">
-             <div className="absolute inset-0 bg-gradient-to-t from-brand-gold/10 to-transparent" />
+          <div className="relative rounded-3xl overflow-hidden mb-12 bg-brand-dark/50 group">
+             <div className="absolute inset-0 bg-gradient-to-t from-brand-gold/20 to-transparent z-10 pointer-events-none" />
+             <Image 
+                src="/comedor.jpg.jpg" 
+                alt="Comedor elegante del Restaurante Las Viñas" 
+                fill 
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-110" 
+             />
           </div>
         </div>
       </div>

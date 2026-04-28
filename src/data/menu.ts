@@ -27,7 +27,7 @@ export const MENU_ITEMS: MenuItem[] = [
   // Entrantes
   { id: 1, category: "Entrantes", name: "Jamón ibérico", description: "Ración de nuestro mejor jamón ibérico.", price: 18.00, image: null, allergens: [], isPopular: true },
   { id: 2, category: "Entrantes", name: "Queso añejo", description: "", price: 12.00, image: null, allergens: ["Lácteos"], isPopular: false },
-  { id: 3, category: "Entrantes", name: "Gamba blanca a la plancha", description: "", price: 26.00, image: null, allergens: ["Marisco"], isPopular: true },
+  { id: 3, category: "Entrantes", name: "Gamba blanca a la plancha", description: "", price: 26.00, image: "/gambas.jpg.jpg", allergens: ["Marisco"], isPopular: true },
   { id: 4, category: "Entrantes", name: "Ensalada de la casa", description: "", price: 8.00, image: null, allergens: [], isPopular: false, isVegan: true },
   { id: 5, category: "Entrantes", name: "Tomate con Ventresca", description: "", price: 12.00, image: null, allergens: ["Pescado"], isPopular: false },
   { id: 6, category: "Entrantes", name: "Lomo de orza", description: "", price: 14.00, image: null, allergens: [], isPopular: false },
@@ -47,7 +47,7 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 21, category: "Pescados", name: "Bacalao al Ajillo con Gambón", description: "", price: 19.00, image: null, allergens: ["Pescado", "Marisco"], isPopular: true },
   { id: 22, category: "Pescados", name: "Calamar a la Brasa", description: "Consultar precio según mercado.", price: null, image: null, allergens: ["Marisco"], isPopular: false },
   { id: 23, category: "Pescados", name: "Lubina a la Espada", description: "", price: 18.00, image: null, allergens: ["Pescado"], isPopular: false },
-  { id: 24, category: "Pescados", name: "Rodaballo", description: "", price: 19.00, image: null, allergens: ["Pescado"], isPopular: false },
+  { id: 24, category: "Pescados", name: "Rodaballo", description: "", price: 19.00, image: "/rodaballo.jpg.jpg", allergens: ["Pescado"], isPopular: false },
 
   // Carnes
   { id: 30, category: "Carnes", name: "Solomillo de cerdo Ibérico al jerez", description: "", price: 16.00, image: null, allergens: [], isPopular: false },
@@ -55,9 +55,9 @@ export const MENU_ITEMS: MenuItem[] = [
   { id: 32, category: "Carnes", name: "Solomillo de Ternera al Foie", description: "", price: 22.00, image: null, allergens: ["Lácteos"], isPopular: true },
   { id: 33, category: "Carnes", name: "Lagarto, Pluma o Secreto Ibérico a la Brasa", description: "", price: 20.00, image: null, allergens: [], isPopular: false },
   { id: 34, category: "Carnes", name: "Entrecot de Vaca Madurada", description: "", price: 20.00, image: null, allergens: [], isPopular: false },
-  { id: 35, category: "Carnes", name: "Chuletón Vaca Madurada 1'1 Kg", description: "Corte seleccionado por nuestra carnicería de confianza, asado lentamente sobre brasa de encina.", price: 68.00, image: null, allergens: [], isPopular: true },
+  { id: 35, category: "Carnes", name: "Chuletón Vaca Madurada 1'1 Kg", description: "Corte seleccionado por nuestra carnicería de confianza, asado lentamente sobre brasa de encina.", price: 68.00, image: "/chuleton.jpg.jpg", allergens: [], isPopular: true },
   { id: 36, category: "Carnes", name: "Rabo de Toro", description: "", price: 18.00, image: null, allergens: [], isPopular: false },
-  { id: 37, category: "Carnes", name: "Cochinillo Asado", description: "", price: 24.00, image: null, allergens: [], isPopular: true },
+  { id: 37, category: "Carnes", name: "Cochinillo Asado", description: "", price: 24.00, image: "/cochinillo al horno.jpg.jpg", allergens: [], isPopular: true },
 
   // Arroces y Pasta
   { id: 40, category: "Arroces y Pasta", name: "Paella Mixta", description: "Por encargo. Precio por persona.", price: 8.00, image: null, allergens: ["Marisco"], isPopular: false },
